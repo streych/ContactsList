@@ -11,10 +11,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/contact_list_list"
-    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:listitem="@layout/contact_item"
+    tools:itemCount="4"
+    tools:ignore="MissingConstraints" />
 
     <include
         android:id="@+id/includedLayoutLoadingLayout"
-        layout="@layout/loadinglayout"/>
+        layout="@layout/loading_layout"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
